@@ -1,0 +1,89 @@
+{
+	"name": "react-cv",
+	"version": "1.0.0",
+	"private": false,
+	"description": "React Curriculum Vitae",
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.lectra.com/team-iraty/cutting-room-application-base.git"
+	},
+	"author": "Matthieu Shioda",
+	"scripts": {
+		"pw": "npx prettier --write .",
+		"scan-i18n": "i18next-scanner --config i18next-scanner.config.js",
+		"start": "npm run scan-i18n && react-scripts start",
+		"build": "npm run scan-i18n && react-scripts build",
+		"test": "npm run scan-i18n && react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.10.4",
+		"@emotion/styled": "^11.10.4",
+		"@mui/icons-material": "^5.10.6",
+		"@mui/material": "^5.10.7",
+		"@reduxjs/toolkit": "^1.8.5",
+		"browser-fs-access": "^0.31.0",
+		"i18next": "^21.9.2",
+		"i18next-chained-backend": "^3.1.0",
+		"i18next-http-backend": "^1.4.4",
+		"i18next-resources-to-backend": "^1.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-error-boundary": "^3.1.4",
+		"react-i18next": "^11.18.6",
+		"react-redux": "^8.0.4",
+		"react-router-dom": "^6.4.1",
+		"react-scripts": "^5.0.1",
+		"typescript": "^4.8.2"
+	},
+	"devDependencies": {
+		"@types/node": "^18.7.14",
+		"@types/react": "^18.0.18",
+		"@types/react-dom": "^18.0.6",
+		"@types/react-redux": "^7.1.24",
+		"@types/react-router-dom": "^5.3.3",
+		"@typescript-eslint/eslint-plugin": "^5.36.1",
+		"@typescript-eslint/parser": "^5.36.1",
+		"eslint": "^8.23.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.31.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^8.0.1",
+		"i18next-scanner": "^4.0.0",
+		"i18next-scanner-typescript": "^1.0.6",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"prettier-eslint": "^15.0.1"
+	},
+	"engines": {
+		"npm": "8.5",
+		"node": "16"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

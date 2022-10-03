@@ -1,0 +1,7 @@
+# Ignore artifacts:
+build
+coverage
+.yalc
+
+# Ignore all HTML files:
+*.html
