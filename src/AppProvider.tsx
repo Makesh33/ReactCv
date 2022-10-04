@@ -61,21 +61,21 @@ function AppProvider(): React.ReactElement {
 
 	return (
 		<StyledEngineProvider injectFirst>
-			<ThemeModeContext.Provider value={themeMode}>
-				<ThemeProvider theme={theme}>
-					<UserPreferenceProvider>
-						{/*// Provide the client to your App*/}
-						<Provider store={store}>
-							<TranslationProvider i18n={applicationI18n}>
-								<LoggerProvider config={{ debug: () => true }}>
+			<LoggerProvider config={{ debug: () => false }}>
+				<ThemeModeContext.Provider value={themeMode}>
+					<ThemeProvider theme={theme}>
+						<UserPreferenceProvider>
+							{/*// Provide the client to your App*/}
+							<Provider store={store}>
+								<TranslationProvider i18n={applicationI18n}>
 									<CssBaseline />
 									<App />
-								</LoggerProvider>
-							</TranslationProvider>
-						</Provider>
-					</UserPreferenceProvider>
-				</ThemeProvider>
-			</ThemeModeContext.Provider>
+								</TranslationProvider>
+							</Provider>
+						</UserPreferenceProvider>
+					</ThemeProvider>
+				</ThemeModeContext.Provider>
+			</LoggerProvider>
 		</StyledEngineProvider>
 	);
 }

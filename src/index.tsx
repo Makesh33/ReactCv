@@ -1,14 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
-import AppProvider from "./AppProvider";
 import Loader from "./components/Loader";
+import AppProvider from "./AppProvider";
 
-ReactDOM.render(
+const container = document.getElementById("root");
+if (!container) throw new Error("Failed to find the root element");
+
+const root = createRoot(container);
+root.render(
 	<React.StrictMode>
 		<React.Suspense fallback={<Loader message={"Loading..."} />}>
 			<AppProvider />
 		</React.Suspense>
-	</React.StrictMode>,
-	document.getElementById("root")
+	</React.StrictMode>
 );

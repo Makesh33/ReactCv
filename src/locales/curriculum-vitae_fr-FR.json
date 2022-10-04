@@ -1,114 +1,114 @@
 {
-    "background": {
-        "cadcamcae-degree": "Master of Science CAD/CAM/CAE",
-        "computer-degree": "DESS Informatique Double Compétence",
-        "estia-cranfield": "ESTIA/Cranfield University",
-        "grenoble-university": "Université de Grenoble",
-        "marine-degree": "DESS Ingénierie Marine (Télécommunication et robotique)",
-        "mechanical-degree": "Licence et Maîtrise de Mécanique",
-        "professional-training": "Formations professionnelle",
-        "professional-training-content": "C++, OpenGl, C#/.Net, Parallélisme, Méthodes Agile, WebGL, WPF et multi-threading, React JS",
-        "toulon-university": "Université de Toulon"
-    },
-    "contact": {
-        "adress": "Mios, France",
-        "linkedin": "linkedin.com/in/matthieu-shioda",
-        "mail": "matthieu.shioda@gmail.com",
-        "phone": "+33616943534",
-        "title": "Contactez moi"
-    },
-    "curriculum_vitae": {
-        "description": "Développeur d'applications desktop puis web depuis le début de ma carrière, j'ai suivi les évolutions de languages et frameworks, et ainsi pu acquérir une certaine expérience en termes d'architecture logicielle, algorithmie et interfaces utilisateurs",
-        "download": "Télécharger CV",
-        "function": "Ingénieur développement logiciel",
-        "name": "Matthieu Shioda"
-    },
-    "date": {
-        "intlDateTime": "{{val, datetime}}",
-        "today": "aujourd'hui"
-    },
-    "dialog": {
-        "close": "Fermer"
-    },
-    "error": {
-        "unknown": "Une erreur inconnue est survenue"
-    },
-    "experience": {
-        "catalog-3d": {
-            "description": "Développement d’un logiciel tactile (desktop et tablette PC) grand public d’essayage virtuel 3D destiné à la vente de costumes sur-mesure.",
-            "detail_1": "Architecture et développements de composants",
-            "detail_2": "Développements fonctionnels",
-            "detail_3": "Conception UX"
-        },
-        "cutting-room-desktop": {
-            "description": "Développement d’applications cloud (Azure) dédiées à la préparation de données et l'organisation de salles de coupe.",
-            "detail_1": "Conception et développement de l'architecture front (applications, modules communs, communication)",
-            "detail_2": "Conception et développement des protocoles d'échanges front/cloud (asynchrone, concurrence, parallèle, pagination)",
-            "detail_3": "Encadrement de développeurs juniors (support technique, revues de code)",
-            "detail_4": "Développements fonctionnels, composants"
-        },
-        "cutting-room-web": {
-            "description": "Développement de modules web pour des applications cloud (Azure) dédiées à la préparation de données et l'organisation de salles de coupe.",
-            "detail_1": "Conception et développement de l'architecture front (applications, modules communs, internationalisation)",
-            "detail_2": "Conception et développement des protocoles d'échanges front/cloud (gestion CRUD via ReactQuery)",
-            "detail_3": "Développements fonctionnels, composants"
-            "detail_4": "Développements fonctionnels, composants"
-        },
-        "designconcept": {
-            "description": "Développement d'un logiciel de mise à plat de surfaces 3D, DesignConcept, plug-in du logiciel de CAO TopSolid (Missler Software).",
-            "detail_1": "Développements fonctionnels",
-            "detail_2": "Analyse des besoins des différents marchés (sellerie automobile, aéronautique, nautique, ameublement, composite, structures gonflables, lingerie, ...) au travers d'alpha sites et proposition de solutions techniques",
-            "detail_3": "Digitalisation 2D/3D"
-        },
-        "furniture-cad-study": "Etudes et chiffrage pour le développement d'un nouveau logiciel de CAO 2D/3D dédié au marché de l'ameublement.",
-        "helioss": {
-            "description": "Développement d'un pré et post processeur éléments finis (général, orientés métiers pour le crash automobile, le fluide, la biomécanique et l’emboutissage) de l’environnement HELIOSS (solveur RADIOSS).",
-            "detail_1": "Conception et développement d’une librairie graphique OpenGL commune",
-            "detail_2": "Développements fonctionnels"
-        },
-        "modaris-2d": {
-            "description": "Développement de plis virtuels sur un logiciel de CAO 2D/3D pour le modélisme.",
-            "detail_1": "Développements fonctionnels",
-            "detail_2": "Algorithmes géométriques"
-        },
-        "modaris-3d": {
-            "description": "Développements sur un logiciel de simulation de vêtements 3D.",
-            "detail_1": "Développements fonctionnels",
-            "detail_2": "Interfaçage COM pour communication inter logiciels"
-        },
-        "user-workspace": {
-            "description": "Développement d'un portail d’accès aux données comprenant des modules de visualisation, recherche en base de données, gestion de workflow.",
-            "detail_1": "Architecture et développements de composants",
-            "detail_2": "Développements fonctionnels",
-            "detail_3": "Conception UX"
-        },
-        "virtual": "Mini projet réalité virtuelle sur HTC Vive"
-    },
-    "hobbies": {
-        "sports": "Sports",
-        "sports-content": "football, pala, badminton, padel, snowboard, surf, kitesurf",
-        "trips": "Voyages",
-        "trips-content": "Portugal, Espagne, Algérie, Maroc, Liban, Syrie, Réunion, Guadeloupe, Japon, Indonésie, Afrique du Sud"
-    },
-    "languages": {
-        "english": "Anglais",
-        "german": "Allemand"
-    },
-    "navigation": {
-        "background": "Formation",
-        "contact": "Contact",
-        "experience": "Expérience",
-        "hobbies": "Hobbies",
-        "home": "Accueil",
-        "skills": "Compétences"
-    },
-    "skills": {
-        "development-tools": "Outils de développement",
-        "frameworks": "Frameworks",
-        "languages": "Languages",
-        "programing": {
-            "languages": "Languages de programmation"
-        },
-        "softwares": "Logiciels"
-    }
+	"background": {
+		"cadcamcae-degree": "Master of Science CAD/CAM/CAE",
+		"computer-degree": "DESS Informatique Double Compétence",
+		"estia-cranfield": "ESTIA/Cranfield University",
+		"grenoble-university": "Université de Grenoble",
+		"marine-degree": "DESS Ingénierie Marine (Télécommunication et robotique)",
+		"mechanical-degree": "Licence et Maîtrise de Mécanique",
+		"professional-training": "Formations professionnelle",
+		"professional-training-content": "C++, OpenGl, C#/.Net, Parallélisme, Méthodes Agile, WebGL, WPF et multi-threading, React JS",
+		"toulon-university": "Université de Toulon"
+	},
+	"contact": {
+		"adress": "Mios, France",
+		"linkedin": "linkedin.com/in/matthieu-shioda",
+		"mail": "matthieu.shioda@gmail.com",
+		"phone": "+33616943534",
+		"title": "Contactez moi"
+	},
+	"curriculum_vitae": {
+		"description": "Développeur d'applications desktop puis web depuis le début de ma carrière, j'ai suivi les évolutions de languages et frameworks, et ainsi pu acquérir une certaine expérience en termes d'architecture logicielle, algorithmie et interfaces utilisateurs",
+		"download": "Télécharger CV",
+		"function": "Ingénieur développement logiciel",
+		"name": "Matthieu Shioda"
+	},
+	"date": {
+		"intlDateTime": "{{val, datetime}}",
+		"today": "aujourd'hui"
+	},
+	"dialog": {
+		"close": "Fermer"
+	},
+	"error": {
+		"unknown": "Une erreur inconnue est survenue"
+	},
+	"experience": {
+		"catalog-3d": {
+			"description": "Développement d’un logiciel tactile (desktop et tablette PC) grand public d’essayage virtuel 3D destiné à la vente de costumes sur-mesure.",
+			"detail_1": "Architecture et développements de composants",
+			"detail_2": "Développements fonctionnels",
+			"detail_3": "Conception UX"
+		},
+		"cutting-room-desktop": {
+			"description": "Développement d’applications cloud (Azure) dédiées à la préparation de données et l'organisation de salles de coupe.",
+			"detail_1": "Conception et développement de l'architecture front (applications, modules communs, communication)",
+			"detail_2": "Conception et développement des protocoles d'échanges front/cloud (asynchrone, concurrence, parallèle, pagination)",
+			"detail_3": "Encadrement de développeurs juniors (support technique, revues de code)",
+			"detail_4": "Développements fonctionnels, composants"
+		},
+		"cutting-room-web": {
+			"description": "Développement de modules web pour des applications cloud (Azure) dédiées à la préparation de données et l'organisation de salles de coupe.",
+			"detail_1": "Conception et développement de l'architecture front (applications, modules communs, internationalisation)",
+			"detail_2": "Conception et développement des protocoles d'échanges front/cloud (gestion CRUD via ReactQuery)",
+			"detail_3": "Développements fonctionnels, composants",
+			"detail_4": "Mise en place Storybooks, tests unitaires cypress"
+		},
+		"designconcept": {
+			"description": "Développement d'un logiciel de mise à plat de surfaces 3D, DesignConcept, plug-in du logiciel de CAO TopSolid (Missler Software).",
+			"detail_1": "Développements fonctionnels",
+			"detail_2": "Analyse des besoins des différents marchés (sellerie automobile, aéronautique, nautique, ameublement, composite, structures gonflables, lingerie, ...) au travers d'alpha sites et proposition de solutions techniques",
+			"detail_3": "Digitalisation 2D/3D"
+		},
+		"furniture-cad-study": "Etudes et chiffrage pour le développement d'un nouveau logiciel de CAO 2D/3D dédié au marché de l'ameublement.",
+		"helioss": {
+			"description": "Développement d'un pré et post processeur éléments finis (général, orientés métiers pour le crash automobile, le fluide, la biomécanique et l’emboutissage) de l’environnement HELIOSS (solveur RADIOSS).",
+			"detail_1": "Conception et développement d’une librairie graphique OpenGL commune",
+			"detail_2": "Développements fonctionnels"
+		},
+		"modaris-2d": {
+			"description": "Développement de plis virtuels sur un logiciel de CAO 2D/3D pour le modélisme.",
+			"detail_1": "Développements fonctionnels",
+			"detail_2": "Algorithmes géométriques"
+		},
+		"modaris-3d": {
+			"description": "Développements sur un logiciel de simulation de vêtements 3D.",
+			"detail_1": "Développements fonctionnels",
+			"detail_2": "Interfaçage COM pour communication inter logiciels"
+		},
+		"user-workspace": {
+			"description": "Développement d'un portail d’accès aux données comprenant des modules de visualisation, recherche en base de données, gestion de workflow.",
+			"detail_1": "Architecture et développements de composants",
+			"detail_2": "Développements fonctionnels",
+			"detail_3": "Conception UX"
+		},
+		"virtual": "Mini projet réalité virtuelle sur HTC Vive"
+	},
+	"hobbies": {
+		"sports": "Sports",
+		"sports-content": "football, pala, badminton, padel, snowboard, surf, kitesurf",
+		"trips": "Voyages",
+		"trips-content": "Portugal, Espagne, Algérie, Maroc, Liban, Syrie, Réunion, Guadeloupe, Japon, Indonésie, Afrique du Sud"
+	},
+	"languages": {
+		"english": "Anglais",
+		"german": "Allemand"
+	},
+	"navigation": {
+		"background": "Formation",
+		"contact": "Contact",
+		"experience": "Expérience",
+		"hobbies": "Hobbies",
+		"home": "Accueil",
+		"skills": "Compétences"
+	},
+	"skills": {
+		"development-tools": "Outils de développement",
+		"frameworks": "Frameworks",
+		"languages": "Languages",
+		"programing": {
+			"languages": "Languages de programmation"
+		},
+		"softwares": "Logiciels"
+	}
 }

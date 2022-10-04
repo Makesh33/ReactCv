@@ -1,115 +1,115 @@
 {
-    "background": {
-        "cadcamcae-degree": "Master of Science CAD/CAM/CAE",
-        "computer-degree": "Dual-skilled computer science DESS degree",
-        "estia-cranfield": "ESTIA/Cranfield university",
-        "grenoble-university": "Grenoble university",
-        "marine-degree": "Marine engineering DESS degree (Telecommunication and robotic)",
-        "mechanical-degree": "Bachelor and Master degree in mechanics",
-        "professional-training": "Professional training",
-        "professional-training-content": "C++, OpenGl, C#/.Net, Parallelism, Agile Methods, WebGL, WPF and multi-threading, React JS",
-        "toulon-university": "Toulon University"
-    },
-    "contact": {
-        "adress": "Mios, France",
-        "linkedin": "linkedin.com/in/matthieu-shioda",
-        "mail": "matthieu.shioda@gmail.com",
-        "phone": "+33616943534",
-        "title": "Contact me"
-    },
-    "curriculum_vitae": {
-        "description": "Developer of desktop and web softwares since the beginning of my career, I followed languages and frameworks evolutions, and thus gained some experience in terms of software architecture, algorithms and user interfaces",
-        "download": "Download CV",
-        "function": "Software development engineer",
-        "name": "Matthieu Shioda"
-    },
-    "date": {
-        "intlDateTime": "{{val, datetime}}",
-        "today": "today"
-    },
-    "dialog": {
-        "close": "Close"
-    },
-    "error": {
-        "unknown": "An unknown error occured"
-    },
-    "experience": {
-        "catalog-3d": {
-            "description": "Development of a touchscreen software (desktop and tablet PC) for the general public for 3D virtual fitting for the sale of custom-made suits",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "cutting-room-desktop": {
-            "description": "Development of cloud applications (Azure) dedicated to data preparation and cutting room organization",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "cutting-room-web": {
-            "description": "Development of web modules for cloud applications (Azure) dedicated to data preparation and cutting room organization",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "designconcept": {
-            "description": "Development of a 3D surface layout software, DesignConcept, plug-in of TopSolid CAD software (Missler Software), analysis of the needs of different markets (automotive, aeronautical, nautical, furniture, composite, inflatable structures, lingerie, ...) through alpha sites and proposal of technical solutions",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "furniture-cad-study": "Studies and costing for the development of a new 2D/3D CAD software dedicated to the furniture market",
-        "helioss": {
-            "description": "Design and development of an OpenGL graphics library common to several finite element pre-processors (general, business oriented for automotive crash, fluid, biomechanics and stamping) and to the post-processor of the HELIOSS environment (RADIOSS solver)",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "modaris-2d": {
-            "description": "Development of virtual folds on a 2D/3D CAD software for model making",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "modaris-3d": {
-            "description": "Developments on a 3D clothing simulation software",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "user-workspace": {
-            "description": "Development of a data access portal including visualization modules, database search, workflow management",
-            "detail_1": "§detail_1",
-            "detail_2": "§detail_2",
-            "detail_3": "§detail_3"
-        },
-        "virtual": "Mini virtual reality project on HTC Vive"
-    },
-    "hobbies": {
-        "sports": "Sports",
-        "sports-content": "soccer, pala, badminton, padel, snowboard, surf, kitesurf",
-        "trips": "Trips",
-        "trips-content": "Portugal, Spain, Algeria, Morocco, Lebanon, Syria, Reunion island, Guadeloupe, Japan, Indonesia, South Africa"
-    },
-    "languages": {
-        "english": "English",
-        "german": "German"
-    },
-    "navigation": {
-        "background": "Background",
-        "contact": "Contact",
-        "experience": "Experience",
-        "hobbies": "Hobbies",
-        "home": "Home",
-        "skills": "Skills"
-    },
-    "skills": {
-        "development-tools": "Development tools",
-        "frameworks": "Frameworks",
-        "languages": "Languages",
-        "programing": {
-            "languages": "Programing languages"
-        },
-        "softwares": "Softwares"
-    }
+	"background": {
+		"cadcamcae-degree": "Master of Science CAD/CAM/CAE",
+		"computer-degree": "Dual-skilled computer science DESS degree",
+		"estia-cranfield": "ESTIA/Cranfield university",
+		"grenoble-university": "Grenoble university",
+		"marine-degree": "Marine engineering DESS degree (Telecommunication and robotic)",
+		"mechanical-degree": "Bachelor and Master degree in mechanics",
+		"professional-training": "Professional training",
+		"professional-training-content": "C++, OpenGl, C#/.Net, Parallelism, Agile Methods, WebGL, WPF and multi-threading, React JS",
+		"toulon-university": "Toulon University"
+	},
+	"contact": {
+		"adress": "Mios, France",
+		"linkedin": "linkedin.com/in/matthieu-shioda",
+		"mail": "matthieu.shioda@gmail.com",
+		"phone": "+33616943534",
+		"title": "Contact me"
+	},
+	"curriculum_vitae": {
+		"description": "Developer of desktop and web softwares since the beginning of my career, I followed languages and frameworks evolutions, and thus gained some experience in terms of software architecture, algorithms and user interfaces",
+		"download": "Download CV",
+		"function": "Software development engineer",
+		"name": "Matthieu Shioda"
+	},
+	"date": {
+		"intlDateTime": "{{val, datetime}}",
+		"today": "today"
+	},
+	"dialog": {
+		"close": "Close"
+	},
+	"error": {
+		"unknown": "An unknown error occured"
+	},
+	"experience": {
+		"catalog-3d": {
+			"description": "Development of a touchscreen software (desktop and tablet PC) for the general public for 3D virtual fitting for the sale of custom-made suits",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"cutting-room-desktop": {
+			"description": "Development of cloud applications (Azure) dedicated to data preparation and cutting room organization",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"cutting-room-web": {
+			"description": "Development of web modules for cloud applications (Azure) dedicated to data preparation and cutting room organization",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"designconcept": {
+			"description": "Development of a 3D surface layout software, DesignConcept, plug-in of TopSolid CAD software (Missler Software), analysis of the needs of different markets (automotive, aeronautical, nautical, furniture, composite, inflatable structures, lingerie, ...) through alpha sites and proposal of technical solutions",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"furniture-cad-study": "Studies and costing for the development of a new 2D/3D CAD software dedicated to the furniture market",
+		"helioss": {
+			"description": "Design and development of an OpenGL graphics library common to several finite element pre-processors (general, business oriented for automotive crash, fluid, biomechanics and stamping) and to the post-processor of the HELIOSS environment (RADIOSS solver)",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"modaris-2d": {
+			"description": "Development of virtual folds on a 2D/3D CAD software for model making",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"modaris-3d": {
+			"description": "Developments on a 3D clothing simulation software",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"user-workspace": {
+			"description": "Development of a data access portal including visualization modules, database search, workflow management",
+			"detail_1": "§detail_1",
+			"detail_2": "§detail_2",
+			"detail_3": "§detail_3"
+		},
+		"virtual": "Mini virtual reality project on HTC Vive"
+	},
+	"hobbies": {
+		"sports": "Sports",
+		"sports-content": "soccer, pala, badminton, padel, snowboard, surf, kitesurf",
+		"trips": "Trips",
+		"trips-content": "Portugal, Spain, Algeria, Morocco, Lebanon, Syria, Reunion island, Guadeloupe, Japan, Indonesia, South Africa"
+	},
+	"languages": {
+		"english": "English",
+		"german": "German"
+	},
+	"navigation": {
+		"background": "Background",
+		"contact": "Contact",
+		"experience": "Experience",
+		"hobbies": "Hobbies",
+		"home": "Home",
+		"skills": "Skills"
+	},
+	"skills": {
+		"development-tools": "Development tools",
+		"frameworks": "Frameworks",
+		"languages": "Languages",
+		"programing": {
+			"languages": "Programing languages"
+		},
+		"softwares": "Softwares"
+	}
 }
