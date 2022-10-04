@@ -1,0 +1,112 @@
+{
+    "background": {
+        "cadcamcae-degree": "§cadcamcae-degree",
+        "computer-degree": "§computer-degree",
+        "estia-cranfield": "§estia-cranfield",
+        "grenoble-university": "§grenoble-university",
+        "marine-degree": "§marine-degree",
+        "mechanical-degree": "§mechanical-degree",
+        "professional-training": "§professional-training",
+        "professional-training-content": "§professional-training-content",
+        "toulon-university": "§toulon-university"
+    },
+    "contact": {
+        "adress": "§adress",
+        "linkedin": "§linkedin",
+        "mail": "§mail",
+        "phone": "§phone",
+        "title": "§title"
+    },
+    "curriculum_vitae": {
+        "description": "§description",
+        "download": "§download",
+        "function": "§function",
+        "name": "§name"
+    },
+    "date": {
+        "intlDateTime": "§intlDateTime",
+        "today": "§today"
+    },
+    "dialog": {
+        "close": "§close"
+    },
+    "error": {
+        "unknown": "§unknown"
+    },
+    "experience": {
+        "catalog-3d": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2",
+            "detail_3": "§detail_3"
+        },
+        "cutting-room-desktop": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2",
+            "detail_3": "§detail_3"
+        },
+        "cutting-room-web": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2",
+            "detail_3": "§detail_3"
+        },
+        "designconcept": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2",
+            "detail_3": "§detail_3"
+        },
+        "furniture-cad-study": "§furniture-cad-study",
+        "helioss": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2"
+        },
+        "modaris-2d": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2"
+        },
+        "modaris-3d": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2"
+        },
+        "user-workspace": {
+            "description": "§description",
+            "detail_1": "§detail_1",
+            "detail_2": "§detail_2",
+            "detail_3": "§detail_3"
+        },
+        "virtual": "§virtual"
+    },
+    "hobbies": {
+        "sports": "§sports",
+        "sports-content": "§sports-content",
+        "trips": "§trips",
+        "trips-content": "§trips-content"
+    },
+    "languages": {
+        "english": "§english",
+        "german": "§german"
+    },
+    "navigation": {
+        "background": "§background",
+        "contact": "§contact",
+        "experience": "§experience",
+        "hobbies": "§hobbies",
+        "home": "§home",
+        "skills": "§skills"
+    },
+    "skills": {
+        "development-tools": "§development-tools",
+        "frameworks": "§frameworks",
+        "languages": "§languages",
+        "programing": {
+            "languages": "§languages"
+        },
+        "softwares": "§softwares"
+    }
+}
