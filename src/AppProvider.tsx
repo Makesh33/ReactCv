@@ -13,7 +13,6 @@ import applicationI18n from "./i18n";
 import { ThemeModeContext } from "./providers/ThemeModeProvider";
 import { CssBaseline, PaletteMode } from "@mui/material";
 import blue from "@mui/material/colors/blue";
-import deepOrange from "@mui/material/colors/deepOrange";
 import grey from "@mui/material/colors/grey";
 import { LoggerProvider } from "./providers/LoggerProvider";
 
@@ -23,24 +22,28 @@ const getDesignTokens = (mode: PaletteMode) => ({
 		primary: {
 			...blue,
 			...(mode === "dark" && {
-				main: blue[300],
+				main: grey["800"],
 			}),
 		},
 		...(mode === "dark" && {
 			background: {
-				default: deepOrange[900],
-				paper: deepOrange[900],
+				default: grey[900],
+				paper: grey[900],
 			},
 		}),
 		text: {
 			...(mode === "light"
 				? {
 						primary: grey[900],
-						secondary: grey[800],
+						secondary: grey[100],
+						title: grey[100],
+						contrastText: grey[100],
 				  }
 				: {
-						primary: "#fff",
-						secondary: grey[500],
+						primary: grey[400],
+						secondary: grey[900],
+						title: grey[400],
+						contrastText: grey[800],
 				  }),
 		},
 	},

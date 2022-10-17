@@ -178,6 +178,7 @@ const paletteOptions = {
 		disabled: greyPalette[100],
 		title: greenPalette.A700,
 		instruction: greyPalette[500],
+		contrastText: greyPalette[100],
 	},
 };
 

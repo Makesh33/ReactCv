@@ -45,6 +45,7 @@ export function ExperienceScreen(): React.ReactElement {
 											key={index}
 											label={techno}
 											sx={{
+												marginTop: 1,
 												marginRight: 1,
 												backgroundColor: "primary.main",
 												color: "common.white",

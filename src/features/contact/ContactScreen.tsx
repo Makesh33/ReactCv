@@ -13,8 +13,14 @@ export default function ContactScreen(): React.ReactElement {
 	const theme = useTheme();
 	const { t } = useTranslation();
 
+	const sxLink = {
+		underline: "hover",
+		ml: 2,
+		color: "primary.A200",
+	};
+
 	return (
-		<Box padding={theme.spacing(2)}>
+		<Box padding={theme.spacing(4)}>
 			<Card
 				title={t("contact.title")}
 				content={
@@ -24,42 +30,26 @@ export default function ContactScreen(): React.ReactElement {
 							<Link
 								href={`https://www.google.com/maps/place/33380+Mios/@44.6103656,-1.031422,11z/data=!3m1!4b1!4m5!3m4!1s0xd54936e3d54a2ad:0x903d6029bdcd3bcc!8m2!3d44.605389!4d-0.939625`}
 								target="_blank"
-								underline="hover"
-								ml={theme.spacing(1)}
+								sx={sxLink}
 							>
 								{t("contact.adress")}
 							</Link>
 						</Stack>
 						<Stack direction="row" mt={theme.spacing(2)}>
 							<PhoneAndroidIcon />
-							<Link
-								href={`tel://t("contact.phone")}`}
-								target="_blank"
-								underline="hover"
-								ml={theme.spacing(1)}
-							>
+							<Link href={`tel://t("contact.phone")}`} target="_blank" sx={sxLink}>
 								{t("contact.phone")}
 							</Link>
 						</Stack>
 						<Stack direction="row" mt={theme.spacing(2)}>
 							<MailIcon />
-							<Link
-								href={`mailto://${t("contact.mail")}`}
-								target="_blank"
-								underline="hover"
-								ml={theme.spacing(1)}
-							>
+							<Link href={`mailto://${t("contact.mail")}`} target="_blank" sx={sxLink}>
 								{t("contact.mail")}
 							</Link>
 						</Stack>
 						<Stack direction="row" mt={theme.spacing(2)}>
 							<LinkedInIcon />
-							<Link
-								href={`http://${t("contact.linkedin")}`}
-								target="_blank"
-								underline="hover"
-								ml={theme.spacing(1)}
-							>
+							<Link href={`http://${t("contact.linkedin")}`} target="_blank" sx={sxLink}>
 								{t("contact.linkedin")}
 							</Link>
 						</Stack>

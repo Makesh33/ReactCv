@@ -39,7 +39,7 @@ export const ExperienceInitialState: ExperienceCard[] = [
 			{
 				//i18next.t("experience.cutting-room-web.description")
 				description: "experience.cutting-room-web.description",
-				technologies: ["React", "JavaScript/TypeScript", "Redux", "ReactQuery"],
+				technologies: ["React", "JavaScript/TypeScript", "Redux", "ReactQuery", "Material UI"],
 				details: [
 					//i18next.t("experience.cutting-room-web.detail_1")
 					"experience.cutting-room-web.detail_1",
@@ -47,6 +47,8 @@ export const ExperienceInitialState: ExperienceCard[] = [
 					"experience.cutting-room-web.detail_2",
 					//i18next.t("experience.cutting-room-web.detail_3")
 					"experience.cutting-room-web.detail_3",
+					//i18next.t("experience.cutting-room-web.detail_4")
+					"experience.cutting-room-web.detail_4",
 				],
 			},
 		],
@@ -70,6 +72,8 @@ export const ExperienceInitialState: ExperienceCard[] = [
 					"experience.cutting-room-desktop.detail_2",
 					//i18next.t("experience.cutting-room-desktop.detail_3")
 					"experience.cutting-room-desktop.detail_3",
+					//i18next.t("experience.cutting-room-desktop.detail_4")
+					"experience.cutting-room-desktop.detail_4",
 				],
 			},
 		],

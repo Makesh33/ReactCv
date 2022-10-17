@@ -12,7 +12,7 @@ import ContactScreen from "../features/contact/ContactScreen";
 export function AppRoutes(): React.ReactElement {
 	return (
 		<Routes>
-			<Route path="/" element={<Navigate to={HomePath} replace />} />
+			<Route path="/ReactCv" element={<Navigate to={HomePath} replace />} />
 			<Route path={`${HomePath}`} element={<HomeScreen />} />
 			<Route path={`${BackgroundPath}`} element={<BackgroundScreen />} />
 			<Route path={`${SkillsPath}`} element={<SkillsScreen />} />
