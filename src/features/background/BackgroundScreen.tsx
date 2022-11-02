@@ -1,10 +1,10 @@
 ﻿import React from "react";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 import Card from "../../components/Card";
-import { useTheme } from "@mui/material";
 
 export function BackgroundScreen(): React.ReactElement {
 	const theme = useTheme();

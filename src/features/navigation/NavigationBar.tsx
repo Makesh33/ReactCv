@@ -1,6 +1,7 @@
 ﻿import React, { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink, LinkProps as RouterLinkProps } from "react-router-dom";
+import { useTheme } from "@mui/material";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Box from "@mui/material/Box";
@@ -30,11 +31,9 @@ import {
 } from "../../app/AppConfiguration";
 import { UserPreferenceContext } from "../../providers/UserPreferenceProvider";
 import { ThemeModeContext } from "../../providers/ThemeModeProvider";
-import { useTheme } from "@mui/material";
 import { useLoggerContext } from "../../providers/LoggerProvider";
 
 export interface NavigationItemLinkProps {
-	key?: number;
 	linkKey: string;
 	to: string;
 	i18nKey: string;
@@ -63,7 +62,7 @@ function getLinkIcon(linkKey?: string): React.ReactElement | null {
 function NavigationItemLink(props: NavigationItemLinkProps) {
 	const logger = useLoggerContext();
 	const { t } = useTranslation();
-	const { key, linkKey, i18nKey, to, onClick, isActive } = props;
+	const { linkKey, i18nKey, to, onClick, isActive } = props;
 
 	const renderLink = React.useMemo(
 		() =>
@@ -85,9 +84,21 @@ function NavigationItemLink(props: NavigationItemLinkProps) {
 	return (
 		<ListItemButton
 			component={renderLink}
-			key={key}
 			selected={isActive}
 			onClick={() => (onClick ? onClick(linkKey) : {})}
+			sx={{
+				webkitFlexGrow: "0",
+				flexGrow: "0",
+				"&:hover": {
+					backgroundColor: (theme) => theme.palette.action.hover,
+				},
+				"&.Mui-selected": {
+					backgroundColor: (theme) => theme.palette.action.selected,
+					"&:hover": {
+						backgroundColor: (theme) => theme.palette.action.hover,
+					},
+				},
+			}}
 		>
 			{getLinkIcon(linkKey)}
 			<ListItemText primary={t(i18nKey)} sx={{ ml: 3 }} />
@@ -103,20 +114,18 @@ export function NavigationBar(props: NavigationBarProps): React.ReactElement {
 	const userPreferenceContext = useContext(UserPreferenceContext);
 	const locale = userPreferenceContext.locale;
 	const [language, setLanguage] = React.useState<string>(locale);
-	// const container = window !== undefined ? () => window().document.body : undefined;
 	const container = undefined;
 	const [mobileOpen, setMobileOpen] = React.useState(props.open);
 
 	useEffect(() => {
 		setMobileOpen(props.open);
-		logger.log(`	NavigationBar2 entry setMobileOpen : ${mobileOpen}, open:${props.open}`);
 	}, [props.open]);
 
 	const handleOnClose = () => {
 		props.onClose();
 		setMobileOpen(false);
 
-		logger.log(`	NavigationBar2 handleOnClose : ${mobileOpen}, open:${props.open}`);
+		logger.log(`	NavigationBar handleOnClose : ${mobileOpen}, open:${props.open}`);
 	};
 	logger.log(`	NavigationBar2 mobileOpen : ${mobileOpen}, open:${props.open}`);
 

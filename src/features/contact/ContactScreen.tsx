@@ -16,7 +16,7 @@ export default function ContactScreen(): React.ReactElement {
 	const sxLink = {
 		underline: "hover",
 		ml: 2,
-		color: "primary.A200",
+		color: "primary.A400",
 	};
 
 	return (

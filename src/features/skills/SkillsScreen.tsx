@@ -21,7 +21,7 @@ export function SkillsScreen(): React.ReactElement {
 							<TitleSlider title="C" level={70} />
 							<TitleSlider title="C++" level={80} />
 							<TitleSlider title="C#" level={80} />
-							<TitleSlider title="Js/TypeScript" level={30} />
+							<TitleSlider title="Js/TypeScript" level={60} />
 						</Box>
 					}
 				/>
@@ -32,8 +32,9 @@ export function SkillsScreen(): React.ReactElement {
 					content={
 						<Box>
 							<TitleSlider title="WPF" level={80} />
-							<TitleSlider title="React/Redux/ReactQuery" level={80} />
-							<TitleSlider title="TPL/Dataflow" level={60} />
+							<TitleSlider title="React/Redux/ReactQuery" level={60} />
+							<TitleSlider title="Material UI" level={60} />
+							<TitleSlider title="TPL/Dataflow" level={50} />
 							<TitleSlider title="Prism/Mef" level={60} />
 							<TitleSlider title="TopADS v6" level={70} />
 						</Box>
@@ -51,6 +52,7 @@ export function SkillsScreen(): React.ReactElement {
 							<TitleSlider title="Snoop" level={80} />
 							<TitleSlider title="SmartGit" level={80} />
 							<TitleSlider title="SmartSvn" level={80} />
+							<TitleSlider title="SourceTree" level={60} />
 						</Box>
 					}
 				/>
@@ -60,7 +62,7 @@ export function SkillsScreen(): React.ReactElement {
 					title={t("skills.softwares")}
 					content={
 						<Box>
-							<TitleSlider title="TopSolid" level={60} />
+							<TitleSlider title="TopSolid" level={70} />
 							<TitleSlider title="Pro-Engineer" level={40} />
 							<TitleSlider title="Ideas Ms" level={30} />
 							<TitleSlider title="Gimp" level={40} />

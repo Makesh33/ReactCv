@@ -1,8 +1,7 @@
 ﻿import React from "react";
-import { Theme, createTheme, PaletteOptions } from "@mui/material/styles";
+import { createTheme, PaletteOptions } from "@mui/material/styles";
 import { Color } from "@mui/material";
 import { CSSProperties } from "@mui/material/styles/createTypography";
-import blue from "@mui/material/colors/blue";
 
 export interface CustomTypographyVariants {
 	callout: CSSProperties;
@@ -42,7 +41,7 @@ declare module "@mui/material/Typography/Typography" {
 	interface TypographyPropsVariantOverrides extends CustomTypographyPropsVariantOverrides {}
 }
 
-const greyPalette: Color = {
+export const greyPalette: Color = {
 	// HoverColor
 	50: "#E6E6E6",
 	// UltraLightGreyColor/UltraLightGreyBrush/SwitchButtonBackgroundUncheckedBrush
@@ -72,7 +71,8 @@ const greyPalette: Color = {
 	// DialogWindowForegroundColor/DarkBackgroundColor
 	A700: "#333333",
 };
-const bluePalette: Color = {
+
+export const bluePalette: Color = {
 	// SelectionHoverColor
 	50: "#C2DEF2",
 	// ControlPrimaryDisabledColor/ControlPrimaryDisabledBrush
@@ -102,7 +102,8 @@ const bluePalette: Color = {
 	// SelectionColorControl/HighlightControlBrushKey/SwitchButtonNormalCheckedBrush/ProgressBarDarkColor/ProgressBrush
 	A700: "#26A3FF",
 };
-const greenPalette: Partial<Color> = {
+
+export const greenPalette: Partial<Color> = {
 	50: "#E6FAEC",
 	100: "#35E67E",
 	// RoundControlCheckedPressedColor
@@ -136,15 +137,22 @@ const paletteOptions = {
 		white: "#FFFFFF",
 	},
 	grey: greyPalette,
-	primary: blue,
+	primary: {
+		light: bluePalette.A400,
+		main: bluePalette.A700,
+		dark: bluePalette[900],
+		...bluePalette,
+		contrastText: "#FFFFFF",
+	},
 	secondary: {
 		light: greyPalette.A400,
 		main: greyPalette.A700,
 		dark: greyPalette[900],
+		...greyPalette,
 		contrastText: "#EAEAEA",
 	},
 	error: {
-		light: "#FF4524",
+		light: "#E73D20AA",
 		main: "#E73D20",
 		dark: "#CF381D",
 		contrastText: "#FBE2DE",
@@ -168,7 +176,7 @@ const paletteOptions = {
 		contrastText: "#E6FAEC",
 	},
 	action: {
-		// hover: greyPalette[50],
+		hover: bluePalette[800],
 		selected: bluePalette[900],
 		disabled: greyPalette[200],
 	},
@@ -253,7 +261,7 @@ let defaultTheme = createTheme({
 		},
 		formLabel: {
 			fontSize: customTypography.fontSizeFormLabel,
-			fontWeight: customTypography.fontWeightLight,
+			fontWeight: customTypography.fontWeightRegular,
 			lineHeight: 1.428,
 			display: "block",
 		},
@@ -384,38 +392,11 @@ defaultTheme = createTheme(defaultTheme, {
 				},
 			},
 		},
-		// MuiListItem: {
-		// 	styleOverrides: {
-		// 		root: {
-		// 			"&.Mui-selected": {
-		// 				backgroundColor: bluePalette.A700,
-		// 				"&:hover": {
-		// 					backgroundColor: bluePalette[50],
-		// 				},
-		// 			},
-		// 			// borderTop: `1px solid ${greyPalette[100]}`,
-		// 			// borderLeft: `1px solid ${greyPalette[100]}`,
-		// 			// borderRight: `1px solid ${greyPalette[100]}`,
-		// 		},
-		// 		button: {
-		// 			root: {
-		// 				webkitFlexGrow: "0",
-		// 				flexGrow: "0",
-		// 				"&.Mui-selected": {
-		// 					backgroundColor: defaultTheme.palette.action.selected,
-		// 				},
-		// 			},
-		// 		},
-		// 	},
-		// },
-		MuiListItemButton: {
+		MuiTooltip: {
 			styleOverrides: {
-				root: {
-					webkitFlexGrow: "0",
-					flexGrow: "0",
-					"&.Mui-selected": {
-						backgroundColor: defaultTheme.palette.action.selected,
-					},
+				tooltip: {
+					backgroundColor: "transparent",
+					borderRadius: "0px",
 				},
 			},
 		},

@@ -11,7 +11,6 @@ const resources = {
 		translation: cvFR,
 	},
 };
-const Languages = ["en-US", "fr-FR"];
 
 const applicationI18n = i18next.createInstance();
 applicationI18n
@@ -33,16 +32,7 @@ applicationI18n
 		resources,
 		interpolation: {
 			escapeValue: false, // not needed for react as it escapes by default
-			// format: (value, format, lng) => {
-			//     if (value instanceof Date) {
-			//         return DateTime.fromJSDate(value).setLocale(lng).toLocaleString(DateTime[format])
-			//     }
-			//     return value;
-			// }
 		},
-		// react: {
-		// 	useSuspense: false,
-		// },
 	});
 
 export default applicationI18n;

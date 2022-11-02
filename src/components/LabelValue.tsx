@@ -2,8 +2,10 @@
 import { Theme, SxProps } from "@mui/material";
 import Box, { BoxProps } from "@mui/material/Box";
 import Grid, { GridSize } from "@mui/material/Grid";
-import OverflowableTypography from "./OverflowableTypography";
+
 import { NoValue } from "../utils/Parameters";
+
+import OverflowableTypography from "./OverflowableTypography";
 
 interface LabelValuePropsBase {
 	label: string;

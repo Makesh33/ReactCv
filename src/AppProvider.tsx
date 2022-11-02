@@ -1,51 +1,75 @@
 ﻿import React from "react";
 import { Provider } from "react-redux";
+import { CssBaseline, PaletteMode } from "@mui/material";
 import { createTheme, StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
 
 import { store } from "./app/store";
 import App from "./App";
-import { defaultTheme } from "./theme/DefaultTheme";
+import { bluePalette, defaultTheme, greyPalette } from "./theme/DefaultTheme";
 import { UserPreferenceProvider } from "./providers/UserPreferenceProvider";
 import { TranslationProvider } from "./providers/TranslationProvider";
 
 // import i18n (needs to be bundled ;))
 import applicationI18n from "./i18n";
 import { ThemeModeContext } from "./providers/ThemeModeProvider";
-import { CssBaseline, PaletteMode } from "@mui/material";
-import blue from "@mui/material/colors/blue";
-import grey from "@mui/material/colors/grey";
 import { LoggerProvider } from "./providers/LoggerProvider";
 
 const getDesignTokens = (mode: PaletteMode) => ({
 	palette: {
 		mode,
-		primary: {
-			...blue,
-			...(mode === "dark" && {
-				main: grey["800"],
-			}),
-		},
-		...(mode === "dark" && {
-			background: {
-				default: grey[900],
-				paper: grey[900],
-			},
-		}),
-		text: {
-			...(mode === "light"
-				? {
-						primary: grey[900],
-						secondary: grey[100],
-						title: grey[100],
-						contrastText: grey[100],
-				  }
-				: {
-						primary: grey[400],
-						secondary: grey[900],
-						title: grey[400],
-						contrastText: grey[800],
-				  }),
-		},
+		...(mode === "light"
+			? {
+					background: {
+						default: "#FFFFFF",
+						paper: "#FFFFFF",
+					},
+					primary: {
+						light: bluePalette.A400,
+						main: bluePalette[700],
+						dark: bluePalette[900],
+						...bluePalette,
+						contrastText: "#FFFFFF",
+					},
+					action: {
+						hover: bluePalette[800],
+						selected: bluePalette[900],
+						disabled: greyPalette[200],
+					},
+					text: {
+						primary: greyPalette[900],
+						secondary: greyPalette[100],
+						title: greyPalette[100],
+						contrastText: greyPalette[100],
+						disabled: greyPalette[100],
+						instruction: greyPalette[500],
+					},
+			  }
+			: {
+					background: {
+						default: greyPalette[900],
+						paper: greyPalette[900],
+					},
+					primary: {
+						light: greyPalette.A400,
+						main: greyPalette.A700,
+						dark: greyPalette[900],
+						...greyPalette,
+						contrastText: "#FFFFFF",
+					},
+					action: {
+						hover: greyPalette[800],
+						selected: greyPalette[900],
+						disabled: greyPalette[200],
+					},
+					text: {
+						primary: greyPalette[400],
+						secondary: greyPalette[900],
+						title: greyPalette[400],
+						contrastText: greyPalette[800],
+						disabled: greyPalette[100],
+						instruction: greyPalette[500],
+					},
+			  }),
 	},
 });
 
