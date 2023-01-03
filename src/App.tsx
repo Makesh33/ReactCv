@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
-import { useTranslation } from "react-i18next";
 import { useTheme } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import Box from "@mui/material/Box";
@@ -13,7 +12,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 
 import { AppRoutes } from "./app/AppRoutes";
 import { useAppDispatch, useAppSelector } from "./app/hooks";
-import { NavigationBarWidth, NavigationInitialState } from "./app/AppConfiguration";
+import { ApplicationName, NavigationBarWidth } from "./app/AppConfiguration";
 import { ErrorFallback } from "./components/ErrorFallback";
 import { NavigationBar } from "./features/navigation/NavigationBar";
 import {
@@ -21,42 +20,58 @@ import {
 	navigationSetLinks,
 	selectNavigationLinks,
 } from "./features/navigation/navigationSlice";
-import {
-	ExperienceInitialState,
-	experienceSetExpandedCards,
-	selectExperienceExpandedCards,
-} from "./features/experience/experienceSlice";
+import { experienceSetExpandedCards } from "./features/experience/experienceSlice";
 import { UserPreferenceContext } from "./providers/UserPreferenceProvider";
+import { useNavigationStorage, useNavigationStateUpdateStorage } from "./features/navigation/useNavigationStorage";
+import { DataToStore, useUpdateStorage } from "./utils/Storage";
+import { useExperienceStateUpdateStorage, useExperienceStorage } from "./features/experience/useExperienceStorage";
+import {
+	applicationSetInitialized,
+	applicationSetLanguage,
+	applicationSetPaletteMode,
+	selectApplicationLanguage,
+} from "./app/applicationSlice";
+import { useUserPreferenceStateUpdateStorage } from "./providers/useUserPreferenceStorage";
 
 function App(): React.ReactElement {
 	const theme = useTheme();
 	const dispatch = useAppDispatch();
+	const language = useAppSelector(selectApplicationLanguage);
 	const navigationLinks = useAppSelector(selectNavigationLinks);
-	const experienceCards = useAppSelector(selectExperienceExpandedCards);
-	const { i18n } = useTranslation();
 	const userPreferenceContext = useContext(UserPreferenceContext);
-	const locale = userPreferenceContext.locale;
-	const [language, setLanguage] = React.useState<string>(locale);
 	const [mobileOpen, setMobileOpen] = React.useState(false);
+	const { getNavigationStateFromStorage } = useNavigationStorage();
+	const { getExperienceStateFromStorage } = useExperienceStorage();
+	const [dataToStore, setDataToStore] = React.useState<DataToStore>();
+
+	useUpdateStorage(ApplicationName, dataToStore);
+	useUserPreferenceStateUpdateStorage();
+	useNavigationStateUpdateStorage();
+	useExperienceStateUpdateStorage();
 
 	const handleDrawerToggle = () => {
 		setMobileOpen(!mobileOpen);
 	};
 
 	const handleLanguage = (event: React.MouseEvent<HTMLElement>, newlanguage: string) => {
-		setLanguage(newlanguage);
-		i18n.changeLanguage(newlanguage);
+		dispatch(applicationSetLanguage(newlanguage));
 	};
 
 	useEffect(() => {
-		if (navigationLinks.length === 0) {
-			dispatch(navigationSetLinks(NavigationInitialState));
-		}
+		dispatch(applicationSetLanguage(userPreferenceContext.locale));
+		dispatch(applicationSetPaletteMode(userPreferenceContext.paletteMode));
+		console.log(
+			`App from userPreferenceContext dispatch(applicationSetPaletteMode(${userPreferenceContext.paletteMode}))`
+		);
 
-		if (experienceCards.length === 0) {
-			dispatch(experienceSetExpandedCards(ExperienceInitialState));
-		}
-	}, [dispatch, navigationLinks, experienceCards]);
+		const navigationState = getNavigationStateFromStorage();
+		dispatch(navigationSetLinks(navigationState.navigationLinks));
+		const experienceState = getExperienceStateFromStorage();
+		dispatch(experienceSetExpandedCards(experienceState.experienceCards));
+
+		dispatch(applicationSetInitialized(true));
+		// setDataToStore({ navigationStateAttribute: navigationState, experienceStateAttribute: experienceState });
+	}, []);
 
 	return (
 		<Router>

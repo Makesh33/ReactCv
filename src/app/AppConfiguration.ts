@@ -1,5 +1,7 @@
 ﻿import { NavigationItemLinkProps } from "../features/navigation/NavigationBar";
 
+export const ApplicationName = "ReactCv";
+
 export const HomePath = "/home/";
 export const SkillsPath = "/skills/";
 export const BackgroundPath = "/background/";

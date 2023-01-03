@@ -1,22 +1,25 @@
-import React, { PropsWithChildren, useContext, useEffect } from "react";
-import { i18n } from "i18next";
+import React, { PropsWithChildren, useEffect } from "react";
 import { I18nextProvider } from "react-i18next";
+import { i18n } from "i18next";
 
-import { UserPreferenceContext } from "./UserPreferenceProvider";
+import { useAppSelector } from "../app/hooks";
+import { selectApplicationInitialized, selectApplicationLanguage } from "../app/applicationSlice";
+
+import { useLoggerContext } from "./LoggerProvider";
 
 type TranslationProviderProps = PropsWithChildren<{ i18n: i18n }>;
 
 export function TranslationProvider({ i18n, children }: TranslationProviderProps): React.ReactElement {
-	const userPreferenceContext = useContext(UserPreferenceContext);
-	const locale = userPreferenceContext.locale;
+	const logger = useLoggerContext();
+	const language = useAppSelector(selectApplicationLanguage);
+	const initialized = useAppSelector(selectApplicationInitialized);
 
 	useEffect(() => {
-		async function changeLanguage() {
-			await i18n.changeLanguage(locale);
+		if (initialized) {
+			logger.log(`TranslationProvider changeLanguage: ${language}`);
+			i18n.changeLanguage(language).then();
 		}
-
-		changeLanguage().then();
-	}, [locale, i18n]);
+	}, [language, initialized, i18n]);
 
 	return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;
 }

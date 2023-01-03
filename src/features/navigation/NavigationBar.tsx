@@ -29,7 +29,8 @@ import {
 	NavigationBarWidth,
 	SkillsPath,
 } from "../../app/AppConfiguration";
-import { UserPreferenceContext } from "../../providers/UserPreferenceProvider";
+import { applicationSetLanguage, selectApplicationLanguage } from "../../app/applicationSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { ThemeModeContext } from "../../providers/ThemeModeProvider";
 import { useLoggerContext } from "../../providers/LoggerProvider";
 
@@ -108,12 +109,10 @@ function NavigationItemLink(props: NavigationItemLinkProps) {
 
 export function NavigationBar(props: NavigationBarProps): React.ReactElement {
 	const logger = useLoggerContext();
-	const { i18n } = useTranslation();
+	const dispatch = useAppDispatch();
 	const theme = useTheme();
 	const themeMode = useContext(ThemeModeContext);
-	const userPreferenceContext = useContext(UserPreferenceContext);
-	const locale = userPreferenceContext.locale;
-	const [language, setLanguage] = React.useState<string>(locale);
+	const language = useAppSelector(selectApplicationLanguage);
 	const container = undefined;
 	const [mobileOpen, setMobileOpen] = React.useState(props.open);
 
@@ -130,8 +129,7 @@ export function NavigationBar(props: NavigationBarProps): React.ReactElement {
 	logger.log(`	NavigationBar2 mobileOpen : ${mobileOpen}, open:${props.open}`);
 
 	const handleLanguage = (event: React.MouseEvent<HTMLElement>, newlanguage: string) => {
-		setLanguage(newlanguage);
-		i18n.changeLanguage(newlanguage);
+		dispatch(applicationSetLanguage(newlanguage));
 	};
 
 	const drawer = (
