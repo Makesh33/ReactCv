@@ -1,4 +1,4 @@
-= Web Application template
+= Web Curriculum Vitae
 
 == 🥞 Technical stack
 
